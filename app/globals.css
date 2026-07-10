@@ -1,5 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base { :root { --background: 48 33% 96%; --foreground: 174 35% 12%; --card: 0 0% 100%; --card-foreground: 174 35% 12%; --primary: 173 72% 28%; --primary-foreground: 0 0% 100%; --secondary: 87 42% 88%; --secondary-foreground: 146 41% 18%; --muted: 49 31% 90%; --muted-foreground: 169 16% 38%; --accent: 39 84% 58%; --accent-foreground: 29 55% 12%; --border: 164 20% 82%; --input: 164 20% 82%; --ring: 173 72% 28%; --radius: 0.9rem; } body { @apply bg-background text-foreground; } }
+@layer base { :root { --background: 48 33% 96%; --foreground: 174 35% 12%; --card: 0 0% 100%; --card-foreground: 174 35% 12%; --primary: 173 72% 28%; --primary-foreground: 0 0% 100%; --secondary: 87 42% 88%; --secondary-foreground: 146 41% 18%; --muted: 49 31% 90%; --muted-foreground: 169 16% 38%; --accent: 39 84% 58%; --accent-foreground: 29 55% 12%; --border: 164 20% 82%; --input: 164 20% 82%; --ring: 173 72% 28%; --radius: 0.9rem; } body { @apply bg-background text-foreground antialiased; } }
 .hero-pattern { background-image: radial-gradient(circle at 20% 20%, rgba(20, 184, 166, .18), transparent 30%), radial-gradient(circle at 80% 0%, rgba(245, 158, 11, .18), transparent 28%), linear-gradient(135deg, rgba(240,253,250,.9), rgba(254,252,232,.95)); }
+
+@layer components {
+  .beginner-note { @apply rounded-2xl border border-primary/20 bg-white/80 p-4 text-sm leading-6 text-muted-foreground; }
+}
