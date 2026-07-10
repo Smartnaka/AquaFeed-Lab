@@ -56,7 +56,7 @@ export default function Formulation() {
             <span className="mt-1 block text-xs font-normal text-muted-foreground">Example: many grow-out feeds use targets around 25% CP.</span>
           </label>
           <div className="flex items-end">
-            <Button className="w-full" onClick={submit} size="lg">Formulate feed</Button>
+            <Button className="w-full" onClick={submit}>Formulate feed</Button>
           </div>
           {error && <p className="rounded-md bg-red-50 p-3 text-sm text-red-700 md:col-span-3">{error}</p>}
         </CardContent>

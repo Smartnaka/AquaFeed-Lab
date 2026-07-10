@@ -48,15 +48,15 @@ export default function Home() {
               AquaFeed Lab separates daily ration planning from feed formulation, so you can move one clear step at a time without digging through cluttered screens.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg">
+              <Button asChild>
                 <Link href="/daily-feeding">Start with daily ration</Link>
               </Button>
-              <Button asChild variant="secondary" size="lg">
+              <Button asChild variant="secondary">
                 <Link href="/formulation">I already know my batch size</Link>
               </Button>
             </div>
           </div>
-          <Card className="border-primary/20 bg-white/90 shadow-lg">
+          <Card className="border-primary/20 bg-white/85 shadow-lg">
             <CardHeader>
               <CardTitle>New here? Use this order</CardTitle>
               <CardDescription>Follow the cards below from top to bottom.</CardDescription>

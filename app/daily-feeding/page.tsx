@@ -58,7 +58,7 @@ export default function Daily() {
               <span className="mt-1 block text-xs font-normal text-muted-foreground">Count the fish in the pond, tank, hapas, or cage.</span>
             </label>
             {error && <p className="rounded-md bg-red-50 p-3 text-sm text-red-700">{error}</p>}
-            <Button className="w-full md:w-auto" onClick={submit} size="lg">
+            <Button className="w-full md:w-auto" onClick={submit}>
               Calculate daily ration
             </Button>
           </CardContent>
